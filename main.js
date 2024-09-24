@@ -14,5 +14,8 @@ form.addEventListener('submit', function(e) {
 function validaNome() {
     if (nomeCompleto.value.trim().split(' ').length > 1) {
         nomeCompleto.value = ''; // Limpa o campo
+    } else {
+        nomeCompleto.style.border = '1px solid red'
+        document.querySelector('.error-message').style.display = 'block';
     }
 }
