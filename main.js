@@ -9,7 +9,7 @@ let linhas = '';
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    if (validaNome()) {
+    if (validaNome() && validaTelefone()) {
         adicionaLinha();
         atualizaTabela();
         limpaCampos();
@@ -27,8 +27,20 @@ function validaNome() {
         document.querySelector('.error-message').style.display = 'none';
         return true;
     } else {
-        nomeCompleto.style.border = '1px solid red'
+        nomeCompleto.style.border = '1px solid red';
         document.querySelector('.error-message').style.display = 'block';
+        return false;
+    }
+}
+
+function validaTelefone() {
+    if (telefoneFormatado.value.trim().length === 15) {
+        telefoneFormatado.style.border = '';
+        document.querySelector('.error-message-number').style.display = 'none';
+        return true;
+    } else {
+        telefoneFormatado.style.border = '1px solid red';
+        document.querySelector('.error-message-number').style.display = 'block';
         return false;
     }
 }

@@ -97,9 +97,19 @@ table td {
     background-color: rgb(255, 0, 0);
     color: #fff;
     font-size: 13px;
-    position: absolute;
-    top: 100%;
-    left: 0;
+    position: relative; 
+    top: 5px; 
+    width: 100%;
+    display: none;
+}
+
+.error-message-number {
+    padding: 8px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    font-size: 13px;
+    position: relative; 
+    top: 5px; 
     width: 100%;
     display: none;
 }
