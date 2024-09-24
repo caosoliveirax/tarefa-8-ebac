@@ -9,7 +9,10 @@ let linhas = '';
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    if (validaNome() && validaTelefone()) {
+    const nomeValido = validaNome();
+    const telefoneValido = validaTelefone();
+
+    if (nomeValido && telefoneValido) {
         adicionaLinha();
         atualizaTabela();
         limpaCampos();
