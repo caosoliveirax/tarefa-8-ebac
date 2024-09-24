@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courier Prime", system-ui;
+}
+
+body {
+    background-color: #ffff0031;
+    padding-top: 100px
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    height: 50px;
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
+    gap: 30px;
+    position: relative;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+form input {
+    font-size: 20px;
+    background-color: #ffffff9a;
+    border: none;
+    border: 1px solid #000000;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+form button {
+    background-color: #14af14;
+    color: #ffff;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+table th {
+    align-items: center;
+    border-bottom: 2px solid #000000;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table th img {
+    height: 20px;
+}
+
+table td {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+    padding: 8px;
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    font-size: 13px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
